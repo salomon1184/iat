@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Api Name="user.addUser" method="post" desc="">
+	<Params>
+		<Required>
+			<Param Name="uid" desc="" />
+			<Param Name="feature" desc="" />
+		</Required>
+		<Optional>
+			<Param Name="status" desc="" />
+		</Optional>
+	</Params>
+	<Results>
+		<success>
+			<Result>
+				<Int Name="current" />
+				<JsonArray Name="data">
+					<JsonObject>
+						<Int Name="fid" />
+						<String Name="fid" />
+						<String Name="content" />
+						<String Name="ptime" />
+					</JsonObject>
+				</JsonArray>
+				<Int Name="total" />
+				<Long Name="status" />
+			</Result>
+		</success>
+		<fail>
+			<Result errorcode="1">
+				<errorMessage value="" />
+			</Result>
+		</fail>
+	</Results>
+</Api>
